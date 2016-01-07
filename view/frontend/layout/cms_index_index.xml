@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_config‌​uration.xsd">
+    <head>
+       <css src="OpsWay_FacebookPopup::css/popup.css"/>
+       <js src="OpsWay_FacebookPopup::js/popup.js"/>
+   </head>
+
+    <body>
+        <referenceContainer name="header.container">
+            <block class="OpsWay\FacebookPopup\Block\Popup" template="OpsWay_FacebookPopup::popup.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

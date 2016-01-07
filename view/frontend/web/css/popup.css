@@ -1,0 +1,85 @@
+#fb-wrap {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.fb {
+    background: #fff;
+    width: 500px;
+    height: 360px;
+    margin: 10% auto;
+    position: relative;
+}
+
+.fb-head {
+    margin-bottom: 20px;
+    background-color: #3B5997;
+    color:#fff;
+    position: relative;
+}
+.fb-head h1 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 73px;
+    border-bottom: 1px rgba(255, 255, 255, 0.29) solid;
+    padding: 0 40px;
+}
+
+.fb-head p {
+    font-size: 19px;
+    line-height: 24px;
+    padding: 6px 40px 25px;
+}
+
+.fb-head:after {
+    top: 100%;
+    left: 42px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top: solid 20px #3B5997;
+    border-right: solid 30px;
+    border-left: solid 0px #fff;
+}
+
+.fb-body {
+    padding:20px 40px;
+}
+
+.fb-footer {
+    font-size: 1.3em;
+    background-color: #F0F0F0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.fb-footer a {
+    cursor: pointer;
+    color: #bbb;
+}
+
+.close {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    font: 14px/100% arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}

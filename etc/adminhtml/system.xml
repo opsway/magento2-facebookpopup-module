@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="opsway" translate="label" sortOrder="100">
+            <label>OpsWay</label>
+        </tab>
+        <section id="facebookpopup" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Facebook popup</label>
+            <tab>opsway</tab>
+            <resource>OpsWay_FacebookPopup::config_facebookpopup</resource>
+            <group id="configuration" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Facebook popup settings</label>
+                <field id="title" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="description" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description</label>
+                </field>
+                <field id="facebook_uri" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook URI</label>
+                    <comment>Example: https://facebook.com/YOUR.URI_HERE</comment>
+                </field>
+                <field id="close_text" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Close button text</label>
+                    <comment>Example: I'm already with you</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

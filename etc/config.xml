@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Core/etc/config.xsd">
+    <default>
+        <facebookpopup>
+            <configuration>
+                <title>Like us on Facebook</title>
+                <description>Like our Facebook page and BE FIRST TO KNOW about our latest Magento tips!</description>
+                <facebook_uri>magetipscom</facebook_uri>
+                <close_text>I'm already with you</close_text>
+            </configuration>
+        </facebookpopup>
+    </default>
+</config>
