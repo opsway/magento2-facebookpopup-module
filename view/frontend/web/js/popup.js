@@ -29,14 +29,15 @@ window.fbAsyncInit = function() {
     });
 };
 
-document.onload = function(){
-    var check_cookie = getCookie('popup-shown-fb');
-    if (!check_cookie) {
-        setCookie('popup-shown-fb', 'true', 10800);
-        setTimeout(function(){
-            document.getElementById('fb-wrap').style.display = "block";
+var check_cookie = getCookie('popup-shown-fb');
+if (!check_cookie) {
+    setCookie('popup-shown-fb', 'true', 10800);
+    setTimeout(function(){
+        document.getElementById('fb-wrap').style.display = "block";
+        if(window._fbq.length)
+        {
             window._fbq.push(['track', 'showPopup', {}]);
-        },
-        5000);
-    }
+        }
+    },
+    5000);
 }
